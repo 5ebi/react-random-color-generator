@@ -43,7 +43,7 @@ export default function App() {
           }}
         >
           Generated Color:
-          <br></br>
+          <br />
         </p>
         <p
           style={{
