@@ -45,7 +45,7 @@ export default function App() {
               color: offwhite,
             }}
           >
-            THIS IS THE GENERATED COLOR:
+            Generated Color:
             <br></br>
           </p>
           <p
