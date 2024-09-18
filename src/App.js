@@ -18,11 +18,14 @@ export default function App() {
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         backgroundColor: color,
+        overflow: 'auto',
       }}
     >
-      <h1 style={{ fontSize: 100, color: offwhite }}>Random Color Generator</h1>
+      <h1 style={{ fontSize: '5vw', color: offwhite, marginBottom: '400px' }}>
+        Random Color Generator
+      </h1>
 
       <div
         style={{
@@ -34,6 +37,7 @@ export default function App() {
           padding: '40px',
           borderRadius: '10px',
           textAlign: 'center',
+          marginBottom: '10px',
         }}
       >
         <p
@@ -53,24 +57,24 @@ export default function App() {
         >
           {color}
         </p>
-
-        <button
-          onClick={handleGenerate}
-          style={{
-            width: '130px',
-            padding: '10px',
-            fontSize: '18px',
-            fontWeight: '900',
-            cursor: 'pointer',
-            backgroundColor: offwhite,
-            color: black,
-            borderRadius: '10px',
-            border: 5,
-          }}
-        >
-          Generate
-        </button>
       </div>
+      <button
+        onClick={handleGenerate}
+        style={{
+          width: '130px',
+          padding: '10px',
+          fontSize: '18px',
+          fontWeight: '900',
+          cursor: 'pointer',
+          backgroundColor: offwhite,
+          color: black,
+          borderRadius: '5px',
+          border: '3px solid lightgrey', // Korrektur hier
+          marginTop: '20px', // Abstand zum vorherigen Element
+        }}
+      >
+        Generate
+      </button>
     </div>
   );
 }
